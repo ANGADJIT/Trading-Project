@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "name": "Python: Django",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}\\TradingProject\\manage.py",
+            "args": [
+                "runserver"
+            ],
+            "django": true,
+            "console": "internalConsole",
+            "justMyCode": true
+        }
+    ]
+}

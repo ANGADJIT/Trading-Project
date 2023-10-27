@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Main App</title>
+</head>
+
+<body>
+    <h1>Upload a CSV File</h1>
+    <form method="post" enctype="multipart/form-data" action="{% url 'upload_file' %}">
+        {% csrf_token %}
+        <label for=" file">Select a CSV File:</label>
+        <input type="file" name="file" id="file" required><br>
+        <label for="timeframe">Timeframe (in minutes):</label>
+        <input type="number" name="timeframe" id="timeframe" required><br>
+        <input type="submit" value="Upload and Convert">
+    </form>
+</body>
+
+</html>
