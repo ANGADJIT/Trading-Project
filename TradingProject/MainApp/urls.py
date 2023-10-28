@@ -4,5 +4,5 @@ from MainApp.views import upload_file
 app_name = 'MainApp'
 
 urlpatterns = [
-    path('', upload_file, name='upload_file'),
+    path('', upload_file, name='index'),
 ]
